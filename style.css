@@ -1,0 +1,184 @@
+:root {/*é um atalho para a variavel de cores e fontes*/
+    --cor-primaria: #f6f6f6; /*letras da fontr*/
+    --cor-secundaria: #161616; /* letras do titulo e destaques*/
+    --cor-terciaria: #73A9AD; /*radape e cabeçalho*/
+    --cor-quartenaria: #352F44;
+
+
+    --fonte-primaria:'Arial Narrow Bold', sans-serif;
+    --font-secundaria: Georgia, Times, 'Times New Roman', serif; ;
+
+}
+
+*{ /*serve para tirar completamente as margens e o padding*/
+    margin: 0;
+    padding: 0;
+
+}
+
+.cabeçalho{
+    padding: 3% 0% 1% 5%;/*não usar px pois quando usa % ele adapta na tela que esta*/
+}
+.cnav{
+    display: flex;
+    gap: 80px;
+}
+.clink{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+body { /*cor fundo do site*/
+   
+    box-sizing: border-box;  /*comando para fundo de duas cores*/
+    background-image: linear-gradient(360deg, #000000 , #423F3E); /* escolha das cores de fundo*/
+    color:rgb(255, 255, 255) /* escolha da cor das letras no site(tirando as que não possuem outro código junto)*/
+    
+}
+strong {/*serve para deixar uma parte do texto colorido*/
+    color:var(--cor-terciaria)
+    
+}
+
+.titulo {/*serve para destacar um título em especial*/
+    font-size: 3.2rem; /*tamanho da letra !1REM = 16PX!*/
+    color:var(--cor-terciaria);/*cor escolhida para a fonte*/
+    font-family:var(--font-secunda);/*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+    align-items: normal;
+}
+.titulo2{
+    font-size: 2.8rem; /*tamanho da letra !1REM = 16PX!*/
+    color: var(--cor-terciaria);/*cor escolhida para a fonte*/
+    font-family:var(--font-secunda);/*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+    align-items: normal;
+}
+.strong2{ /*serve para deixar uma parte do texto colorido*/
+    color: #FE0000;
+
+}
+.organizacao{/**/
+    padding:  3% 10%;/*margin: 7%;*//*alterado pra padding para tirar a margem de cima e lateral*/
+    display:flex;
+    align-items: center;
+    justify-content:space-between; /*serve para alinhar os conteudos*/
+    gap: 90px;
+}
+
+.organizacao_2{/**/
+    width: 50%;
+    display: flex;
+    flex-direction: column;/* deixa em alinhado em coluna*/
+    gap: 40px;/*determina a distancia entre os textos e a imagem*/
+}
+
+.conatiner{
+
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.imagem2{
+    width: auto;
+}
+.container__caixa{
+
+    margin: 0 6rem;
+}
+
+.subtitulo2{
+    font-weight: 700;
+    font-size: 48px;
+    color:var(--cor-quartenaria);
+    margin-bottom: 0.5rem;
+}
+
+.descricao2{
+    color: var(--cor-secundaria)
+}
+
+.font{
+    font-size: 1.5rem;  /*tamanho da fonte*/
+    font-family: var(--fonte-primaria); /*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+}
+.font2{
+    font-size: 1.2rem;  /*tamanho da fonte*/
+    font-family: var(--fonte-primaria); /*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+}
+.subtitulo{
+    font-size: 1.5rem;  /*tamanho da fonte*/
+    font-family: var(--fonte-primaria);/*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+    color:#DBD0C0
+}
+.botao {/**/
+    display: flex;
+    font-weight: 400px;/*grossura das letras*/
+    flex-direction: column; /*deixar os botoes em colunas*/
+    justify-content: space-between;/*serve para alinhar os conteudos*/
+    align-items: center; /*centralizar botoes*/
+    gap: 32px; /*espaçamento do botao para o outro*/
+
+}
+.stylebotao {/**/
+    display: flex;
+    justify-content: center;
+    border:6px outset #000000; /*APENAS A BORDA*/
+    background-color: var(--cor-quartenaria);/*cor do botao inteiro*/
+    width: 55%; /*largura do botão*/
+    text-align: center;/* centralizar os botoes*/
+    border-radius: 16px; /* arredondamento do botão*/ 
+    font-size: 1.5rem; /* tamanho da fonte*/
+    padding: 7px 0px; /*largura e comprimento respectivamente*/
+    text-decoration: none; /*tirar o sublinhado dos links*/
+    color: rgb(255, 255, 255);/* cor das letras*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    padding: 24px;/*distância entre letra e borda*/
+}
+
+.stylebotao:hover{/*colorir botão ao passar por cima*/
+    background-color: #272727;
+    cursor: -webkit-grabbing;/*muda o cursor no botão*/
+}
+
+.imagem {/*serve para editar o tamanho da imagem*/
+    width: 50%; /*largura*/
+    height: 10%; /*comprimento*/
+    padding: 50px; /*distância entre a imagem e o texto do site*/
+    border-radius: 100px; /* arredondamento da imagem*/ 
+    display: block;
+    justify-content: center;/* imagem centralizada*/ 
+
+}
+.rodape{
+    color:var(--cor-terciaria);
+    background-color: rgb(36, 33, 33);
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 1.0rem;
+}
+
+@media(max-width:800px)
+    {
+    .cabeçalho{
+        padding:5%;
+    }
+    .cnav{
+        justify-content: center;
+    }
+    .organizacao{
+        flex-direction: column-reverse;
+    } 
+    .titulo {
+        font-size: 2.7rem; 
+        color:var(--cor-terciaria);
+        font-family:var(--font-secunda);
+        align-items: normal;}
+    
+    .organizacao_2{
+        width: auto; /*é possível usar 100% que tbm funciona*/
+    }
+    }
