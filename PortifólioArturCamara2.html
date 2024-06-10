@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sobre mim</title>
-    <link rel="stylesheet"   href="./style.css">
+    <link rel="stylesheet"  href="./style.css">
 </head>
 <body>
     <header  class="cabeçalho">
@@ -14,22 +14,63 @@
         </nav>
     </header>
     <main class="organizacao">
-        <section class="organizacao_2">
-                <h1 class="titulo2">Louco pelo <strong class="strong2">INTER</strong>!</h1>
+        <section class="conteudo3">
+                <h1 class="titulo2">Louco pelo <strong class="strong">INTER</strong>!</h1>
                 <p class="font2">Para mim, ser torcedor do Internacional de Porto Alegre vai além de simplesmente acompanhar um time de futebol; é uma conexão visceral que transcende o campo e se entrelaça com minha própria identidade. Desde o momento em que nasci, o vermelho e branco correm em minhas veias, uma herança passada de geração em geração.
-
                     Cada jogo é uma montanha-russa emocional, onde a alegria das vitórias e a dor das derrotas se misturam em um turbilhão de sentimentos. Mas é nos momentos de desafio que meu amor pelo Inter se fortalece, quando a fé e a esperança se tornam minhas maiores aliadas.
-                    
                     Quando entro no estádio, sinto uma energia única, compartilhada por milhares de outros corações vermelhos que batem no mesmo ritmo que o meu. Somos uma família, uma comunidade unida pelo amor ao mesmo clube, e isso me enche de orgulho.
-                    
                     Ser torcedor do Internacional não é apenas uma escolha, é parte de quem eu sou. É carregar o escudo no peito com honra e defender as cores do meu time com paixão e devoção, independentemente do resultado em campo. Porque o amor ao Inter é eterno, imutável, e jamais se apaga. </p>
                
         </section>
-        <img  class="imagem" src="assets/WhatsApp Image 2024-04-26 at 19.21.49.jpeg"    alt="Foto de ArturCamara">
+        <img  class="imagem3" src="assets/WhatsApp Image 2024-04-26 at 19.21.49.jpeg"    alt="Foto de ArturCamara">
 
     </main>
+
+    <section class="conteudo2">
+        <img src="assets/grafico_grenais.jpg" alt="Foto do Internacional" class="imagem4">
+        <div class="conteudo4">
+            <h2 class="titulo4">Calcule há quantos anos o Grêmio é filho do INTERNACIONAL:</h2>
+            <div class="calculadora">
+                <p id="resultado"></p>
+                <table>
+                    <td><button class="botao4" onclick="clean()">C</button></td>
+                    <td><button class="botao4" onclick="back()"><</button></td>
+                    <td><button class="botao4" onclick="insert('/')">/</button></td>
+                    <td><button class="botao4" onclick="insert('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao4" onclick="insert('7')">7</button></td>
+                    <td><button class="botao4" onclick="insert('8')">8</button></td>
+                    <td><button class="botao4" onclick="insert('9')">9</button></td>
+                    <td><button class="botao4" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao4" onclick="insert('4')">4</button></td>
+                    <td><button class="botao4" onclick="insert('5')">5</button></td>
+                    <td><button class="botao4" onclick="insert('6')">6</button></td>
+                    <td><button class="botao4" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao4" onclick="insert('1')">1</button></td>
+                    <td><button class="botao4" onclick="insert('2')">2</button></td>
+                    <td><button class="botao4" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="botao4" style="height: 106px;" onclick="calcular()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao4" style="width: 106px;" onclick="insert('0')">0</button></td>
+                    <td><button class="botao4" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+                </table>
+
+            </div>
+            
+        </div>
+    </section>
     <footer class="rodape">
         <p>Obrigado pela visita!</p>
     </footer>
+    <script  src="/trabalho.js"></script>
 </body>
 </html>

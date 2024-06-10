@@ -1,184 +1,235 @@
-:root {/*é um atalho para a variavel de cores e fontes*/
-    --cor-primaria: #f6f6f6; /*letras da fontr*/
-    --cor-secundaria: #161616; /* letras do titulo e destaques*/
-    --cor-terciaria: #73A9AD; /*radape e cabeçalho*/
+:root {
+    --cor-primaria: #f6f6f6;
+    --cor-secundaria: #161616;
+    --cor-terciaria: #73A9AD;
     --cor-quartenaria: #352F44;
-
-
-    --fonte-primaria:'Arial Narrow Bold', sans-serif;
-    --font-secundaria: Georgia, Times, 'Times New Roman', serif; ;
-
+    --fonte-primaria: 'Arial Narrow Bold', sans-serif;
+    --fonte-secundaria: Georgia, Times, 'Times New Roman', serif;
 }
 
-*{ /*serve para tirar completamente as margens e o padding*/
+* {
     margin: 0;
     padding: 0;
-
+}
+/*PARTE 1*/
+.cabeçalho {
+    padding: 3% 0% 1% 5%; /*largura e comprimento respectivamente*/
 }
 
-.cabeçalho{
-    padding: 3% 0% 1% 5%;/*não usar px pois quando usa % ele adapta na tela que esta*/
-}
-.cnav{
+.cnav {
     display: flex;
-    gap: 80px;
-}
-.clink{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--cor-terciaria);
-    text-decoration: none;
+    gap: 80px; /*determina a distancia entre os textos e a imagem*/
 }
 
-body { /*cor fundo do site*/
-   
-    box-sizing: border-box;  /*comando para fundo de duas cores*/
-    background-image: linear-gradient(360deg, #000000 , #423F3E); /* escolha das cores de fundo*/
-    color:rgb(255, 255, 255) /* escolha da cor das letras no site(tirando as que não possuem outro código junto)*/
+.clink {
+    font-family: Arial, Helvetica, sans-serif; /*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+    font-size: 1.5rem;/*tamanho da letra !1REM = 16PX!*/
+    font-weight: 600; /*grossura das letras*/
+    color: var(--cor-terciaria); /*cor escolhida para a fonte*/
+    text-decoration: none; /*tira a decoração do texto, como a linha azul do link*/
+}
+
+body {
+    box-sizing: border-box;/*comando para fundo de duas cores*/
+    background-image: linear-gradient(360deg, #000000 , #423F3E);/* escolha das cores de fundo*/
+    color: rgb(255, 255, 255);/*cor escolhida para a fonte*/
+}
+
+.organizacao {
+    padding: 3% 10%;/*largura e comprimento respectivamente*/
+    display: flex;
+    align-items: center; /* centralizar os conteudo*/
+    justify-content: space-between; /*serve para alinhar os conteudos*/
+    gap: 90px; /*determina a distancia entre os textos e a imagem*/
+}
+
+.conteudo {
+    width: 50%; /*largura*/
     
 }
-strong {/*serve para deixar uma parte do texto colorido*/
-    color:var(--cor-terciaria)
-    
+
+.titulo {
+    font-size: 3.0rem; /*tamanho da letra !1REM = 16PX!*/
+    color: var(--cor-terciaria); /*cor escolhida para a fonte*/
+    font-family: var(--fonte-secundaria);/*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+    align-items: normal; /* centralizar os conteudo*/
+    margin-bottom: 30px;/*distância dos conteúdos*/
 }
 
-.titulo {/*serve para destacar um título em especial*/
-    font-size: 3.2rem; /*tamanho da letra !1REM = 16PX!*/
-    color:var(--cor-terciaria);/*cor escolhida para a fonte*/
-    font-family:var(--font-secunda);/*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
-    align-items: normal;
-}
-.titulo2{
-    font-size: 2.8rem; /*tamanho da letra !1REM = 16PX!*/
-    color: var(--cor-terciaria);/*cor escolhida para a fonte*/
-    font-family:var(--font-secunda);/*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
-    align-items: normal;
-}
-.strong2{ /*serve para deixar uma parte do texto colorido*/
-    color: #FE0000;
-
-}
-.organizacao{/**/
-    padding:  3% 10%;/*margin: 7%;*//*alterado pra padding para tirar a margem de cima e lateral*/
-    display:flex;
-    align-items: center;
-    justify-content:space-between; /*serve para alinhar os conteudos*/
-    gap: 90px;
-}
-
-.organizacao_2{/**/
-    width: 50%;
-    display: flex;
-    flex-direction: column;/* deixa em alinhado em coluna*/
-    gap: 40px;/*determina a distancia entre os textos e a imagem*/
-}
-
-.conatiner{
-
-    align-items: center;
-    margin: 0 10rem;
-}
-
-.imagem2{
-    width: auto;
-}
-.container__caixa{
-
-    margin: 0 6rem;
-}
-
-.subtitulo2{
-    font-weight: 700;
-    font-size: 48px;
-    color:var(--cor-quartenaria);
-    margin-bottom: 0.5rem;
-}
-
-.descricao2{
-    color: var(--cor-secundaria)
-}
-
-.font{
-    font-size: 1.5rem;  /*tamanho da fonte*/
-    font-family: var(--fonte-primaria); /*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
-}
-.font2{
-    font-size: 1.2rem;  /*tamanho da fonte*/
-    font-family: var(--fonte-primaria); /*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
-}
-.subtitulo{
-    font-size: 1.5rem;  /*tamanho da fonte*/
+.font {
+    font-size: 1.5rem; /*tamanho da letra !1REM = 16PX!*/
     font-family: var(--fonte-primaria);/*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
-    color:#DBD0C0
+    margin-bottom: 30px;/*distância dos conteúdos*/
 }
-.botao {/**/
+
+strong {/*serve para deixar uma parte do texto colorido*/
+    color: var(--cor-terciaria); /*cor escolhida para a fonte*/
+}
+
+.botao {
     display: flex;
-    font-weight: 400px;/*grossura das letras*/
+    font-weight: 400px; /*grossura das letras*/
     flex-direction: column; /*deixar os botoes em colunas*/
-    justify-content: space-between;/*serve para alinhar os conteudos*/
-    align-items: center; /*centralizar botoes*/
-    gap: 32px; /*espaçamento do botao para o outro*/
-
+    justify-content: space-between; /*serve para alinhar os conteudos*/
+    align-items: center; /* centralizar os conteudo*/
+    gap: 32px;/*determina a distancia entre os textos e a imagem*/
 }
-.stylebotao {/**/
+
+.subtitulo {
+    font-size: 1.5rem; /*tamanho da letra !1REM = 16PX!*/
+    font-family: var(--fonte-primaria); /*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+    color: #DBD0C0; /*cor escolhida para a fonte*/
+}
+
+.stylebotao {
     display: flex;
-    justify-content: center;
-    border:6px outset #000000; /*APENAS A BORDA*/
-    background-color: var(--cor-quartenaria);/*cor do botao inteiro*/
-    width: 55%; /*largura do botão*/
-    text-align: center;/* centralizar os botoes*/
-    border-radius: 16px; /* arredondamento do botão*/ 
-    font-size: 1.5rem; /* tamanho da fonte*/
-    padding: 7px 0px; /*largura e comprimento respectivamente*/
-    text-decoration: none; /*tirar o sublinhado dos links*/
-    color: rgb(255, 255, 255);/* cor das letras*/
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-    padding: 24px;/*distância entre letra e borda*/
+    justify-content: center; /*serve para alinhar os conteudos*/
+    border: 6px outset #000000;
+    background-color: var(--cor-quartenaria);
+    width: 55%; /*largura*/
+    text-align: center;
+    border-radius: 16px; /* arredondamento da imagem*/
+    font-size: 1.5rem; /*tamanho da letra !1REM = 16PX!*/
+    text-decoration: none;
+    color: rgb(255, 255, 255); /*cor escolhida para a fonte*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+    padding: 24px; /*distância entre a imagem e o texto do site*/
 }
 
-.stylebotao:hover{/*colorir botão ao passar por cima*/
+.stylebotao:hover {
     background-color: #272727;
-    cursor: -webkit-grabbing;/*muda o cursor no botão*/
+    cursor: -webkit-grabbing;/*alteração no cursor quando passa por cima*/
 }
 
-.imagem {/*serve para editar o tamanho da imagem*/
+.imagem1 {
     width: 50%; /*largura*/
     height: 10%; /*comprimento*/
     padding: 50px; /*distância entre a imagem e o texto do site*/
-    border-radius: 100px; /* arredondamento da imagem*/ 
+    border-radius: 100px; /* arredondamento da imagem*/
     display: block;
-    justify-content: center;/* imagem centralizada*/ 
-
+    justify-content: center; /*serve para alinhar os conteudos*/
 }
-.rodape{
-    color:var(--cor-terciaria);
-    background-color: rgb(36, 33, 33);
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
-    font-size: 1.0rem;
-}
-
-@media(max-width:800px)
-    {
-    .cabeçalho{
-        padding:5%;
-    }
-    .cnav{
-        justify-content: center;
-    }
-    .organizacao{
-        flex-direction: column-reverse;
-    } 
-    .titulo {
-        font-size: 2.7rem; 
-        color:var(--cor-terciaria);
-        font-family:var(--font-secunda);
-        align-items: normal;}
+/*PARTE 2*/
+.conteudo2 {
+    width: 100%; /*largura*/
+    display: flex;
     
-    .organizacao_2{
-        width: auto; /*é possível usar 100% que tbm funciona*/
-    }
-    }
+}
+
+.imagem2 {
+    width: 32%;/*largura*/
+    border-radius: 20px; /* arredondamento da imagem*/
+    margin: 10rem 0rem  5rem 9rem
+}
+
+.container_caixa {    
+    margin:  10rem  5%; 
+    width: 45%; /*largura*/
+    padding: 2%; /*distância entre a imagem e o texto do site*/
+}
+
+.subtitulo2 {
+    font-size: 2.5rem; /*tamanho da letra !1REM = 16PX!*/
+    color:var(--cor-terciaria); /*cor escolhida para a fonte*/
+    font-family: var(--fonte-primaria); /*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+}
+
+.descricao2 {
+    color: var(--cor-primaria); /*cor escolhida para a fonte*/
+    text-align: justify;
+    font-family: var(--fonte-secundaria); /*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+}
+
+/*SEGUNDA PARTE*/
+
+.conteudo3{
+    width: 50%; /*largura*/
+    display: flex;
+    flex-direction: column; /*deixar o conteudo em coluna*/
+    gap: 40px;/*determina a distancia entre os textos e a imagem*/
+}
+
+.titulo2 {
+    font-size: 2rem; /*tamanho da letra !1REM = 16PX!*/
+    color: var(--cor-terciaria); /*cor escolhida para a fonte*/
+    font-family: var(--fonte-secundaria); /*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+    align-items: normal; /* centralizar os conteudo*/
+}
+
+.font2 {
+    font-size: 1.4rem; /*tamanho da letra !1REM = 16PX!*/
+    font-family: var(--fonte-primaria); /*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+}
+
+.imagem3{
+    width: 50%; /*largura*/
+    height: 10%; /*comprimento*/
+    padding: 50px; /*distância entre a imagem e o texto do site*/
+    border-radius: 100px; /* arredondamento da imagem*/
+    display: block;
+    justify-content: center; /*serve para alinhar os conteudos*/
+
+}
+
+.imagem4{
+    width: 40%; /*largura*/
+    height: 15%; /*comprimento*/
+    border-radius: 20px; /* arredondamento da imagem*/
+    margin: 7rem 2rem  5rem 10rem;
+    margin-bottom: 50px; /*distância dos conteúdos*/
+
+}
+
+/*CALCULADORA*/
+
+.titulo4{
+    font-size: 2rem; /*tamanho da letra !1REM = 16PX!*/
+    color: var(--cor-primaria);/*cor escolhida para a fonte*/
+    font-family: var(--fonte-secundaria); /*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+    align-items: normal; /* centralizar os conteudo*/
+    margin-bottom: 40px; /*distância dos conteúdos*/
+}
+
+
+.calculadora{
+    margin: 0rem 10rem 0rem 19rem;
+    background-color: rgb(255, 0, 0);
+    border-radius: 15px; /* arredondamento da imagem*/
+    padding: 15px; /*distância entre a imagem e o texto do site*/
+}
+.botao4{
+    width: 50px; /*largura*/
+    height: 50px;/*comprimento*/
+    font-size: 1.6rem; /*tamanho da letra !1REM = 16PX!*/
+    cursor: pointer;/*alteração no cursor quando passa por cima*/
+    margin: 3px;
+    background-color: rgb(255, 253, 253);
+    border: none; /*tira a borda*/
+    color: #000000; /*cor escolhida para a fonte*/
+}
+.botao4:hover{
+    background-color: rgb(182, 173, 173);
+}
+#resultado{
+    background-color: white;
+    width: 207px; /*largura*/
+    height: 30px;/*comprimento*/
+    margin: 5px;
+    font-size: 1.6rem; /*tamanho da letra !1REM = 16PX!*/
+    color: black; /*cor escolhida para a fonte*/
+    text-align: right; /*coloca a direita os conteudo*/
+    padding: 5px; /*distância entre a imagem e o texto do site*/
+}
+
+
+
+.rodape {
+    color: var(--cor-terciaria); /*cor escolhida para a fonte*/
+    background-color: rgb(36, 33, 33);
+    padding: 20px; /*distância entre a imagem e o texto do site*/
+    text-align: center;/* centralizar os conteudo*/
+    font-family: Arial, Helvetica, sans-serif; /*fonte da letra escolhida pelo vs, pórem pode ser pega no site GOOGLE FONTS*/
+    font-weight: 800px;/*grossura das letras*/
+    font-size: 1.0rem; /*tamanho da letra !1REM = 16PX!*/
+}
+
